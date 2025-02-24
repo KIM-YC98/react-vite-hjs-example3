@@ -17,3 +17,11 @@
 "jsxSingleQuote": true, // JSX에서 작은 따옴표(') 사용
 "semi": false // 세미콜론을 사용하지 않음
 }
+
+#### 3.기본 실행순서
+
+index.html -> main.jsx -> App.jsx
+
+#### 4.Hello World 찍어 보기
+
+- 첫번째 컴포넌트 작성 해보기
