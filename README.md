@@ -1,27 +1,7 @@
-#### 1.기본환경설정
+### 1.라우터 패키지 설치
 
-##### 기본 extension
+"react-router-dom": "^6.26.0" -> 추가
 
-1. 프리티어 extension 설치
-2. React/Redux/React-Native snippets v4.4.3 설치
-3. React Extension Pack
-4. Auto Close Tag
+### 2.router 기본 뼈대 코딩
 
-#### 2. 프리티어 기본 설정
-
-{
-"printWidth": 120, // 한 줄의 최대 길이를 100자로 제한
-"tabWidth": 2, // 들여쓰기 크기를 2칸으로 설정
-"trailingComma": "all", // 모든 곳에서 마지막 요소 뒤에 쉼표 추가
-"singleQuote": true, // 문자열에 작은 따옴표(') 사용
-"jsxSingleQuote": true, // JSX에서 작은 따옴표(') 사용
-"semi": false // 세미콜론을 사용하지 않음
-}
-
-#### 3.기본 실행순서
-
-index.html -> main.jsx -> App.jsx
-
-#### 4.Hello World 찍어 보기
-
-- 첫번째 컴포넌트 작성 해보기
+### 3.부트스트랩 적용
