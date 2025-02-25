@@ -1,6 +1,8 @@
 import BoardPage from '../pages/BoardPage'
+import ConditionalPage from '../pages/ConditionalPage'
 import HelloPage from '../pages/HelloPage'
 import HomePage from '../pages/HomePage'
+import JSXPage from '../pages/JSXPage'
 import ProfilePage from '../pages/ProfilePage'
 
 //React Routes, Route 사용시 배열로 관리하기
@@ -24,6 +26,16 @@ const routes = [
     path: '/hello',
     element: <HelloPage />,
     title: 'hello',
+  },
+  {
+    path: '/jsx',
+    element: <JSXPage />,
+    title: 'jsx문법',
+  },
+  {
+    path: '/conditional',
+    element: <ConditionalPage />,
+    title: '조건부랜더링',
   },
 ]
 export default routes
