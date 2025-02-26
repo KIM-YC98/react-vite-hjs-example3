@@ -10,29 +10,27 @@ import React, { useRef } from 'react'
 //추가적으로 Video.js, JWPlayer 같은 HTML5 Video 관련 라이브러리,
 //또는 D3, chart.js 같은 그래프 관련 라이브러리 등의 외부 라이브러리를 사용해야 할
 //때에도 특정 DOM 에다 적용하기 때문에 DOM 객체를 useRef() 로 가져옴
-
 const UseRef2Page = () => {
-
   const nameRef = useRef()
   //{current : null}
 
-  // <input ref={nameRef} name='name' placeholder='이름을 입력하세요' />
+  //  <input ref={nameRef} name='name' placeholder='이름을 입력하세요' />
   // let nameRef ={
   //   current : windows.documnet.querySelector("input")
   // }
-const handleClick = () => {
-    console.log(nameRef.current);
-    console.log(nameRef.current.name);
-    console.log(nameRef.current.value);
+  const handleClick = () => {
+    console.log(nameRef.current)
+    console.log(nameRef.current.name)
+    console.log(nameRef.current.value)
 
     if (nameRef.current.value.length < 1) {
-      nameRef.current.focus();
+      nameRef.current.focus()
     }
-}
+  }
 
   return (
-    <div style={{ padding: 20 }}>
-      <input ref={nameRef} name="name" placeholder="이름을 입력하세요" />
+    <div className='text-center mt-5' style={{ padding: 20 }}>
+      <input ref={nameRef} name='name' placeholder='이름을 입력하세요' />
       <button onClick={handleClick}>입력</button>
     </div>
   )

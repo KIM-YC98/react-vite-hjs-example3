@@ -1,12 +1,15 @@
 import React from 'react'
+import Counter from '../components/Counter'
+import Counter2 from '../components/Counter2'
 
-function cOUNTERPage() {
-  return <div classname='text-center mt-5'>
-   <Counter />
-   <hr /><hr />
-   <Counter2 />
-  </div>
-  
+const CounterPage = () => {
+  return (
+    <div className='text-center mt-5'>
+      <Counter />
+      <hr /><hr />
+      <Counter2 />
+    </div>
+  )
 }
 
-export default cOUNTERPage
+export default CounterPage
