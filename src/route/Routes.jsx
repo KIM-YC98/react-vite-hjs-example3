@@ -1,3 +1,4 @@
+import AxiosCLient from '../pages/AxiosCLientPage'
 import AxiosGetPage from '../pages/AxiosGetPage'
 import BoardPage from '../pages/BoardPage'
 import BootStrapPage from '../pages/BootStrapPage'
@@ -78,6 +79,11 @@ const routes = [
     path: '/axiosget',
     element: <AxiosGetPage />,
     title: 'axios-get',
+  },
+  {
+    path: '/axiosclient',
+    element: <AxiosCLient />,
+    title: 'axios-client',
   },
 ]
 
