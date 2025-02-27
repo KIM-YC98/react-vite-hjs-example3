@@ -1,8 +1,12 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const AxiosClient = () => {
   const [contacts, setContacts] = useState(null)
+
+  useEffect(() => {
+    getClick()
+  }, [])
 
   const getClick = () => {
     axios
@@ -21,7 +25,8 @@ const AxiosClient = () => {
         console.log('에러가 나든 안나든 무조건 실행')
       })
   }
-// const onRemove = (id) => {
+
+  // const onRemove = (id) => {
   //   // user.id 가 파라미터로 일치하지 않는 원소만 추출해서 새로운 배열을 만듬
   //   // = user.id 가 id 인 것을 제거함
   //   // users.filter((user) => user.id !== id
@@ -37,8 +42,9 @@ const AxiosClient = () => {
 
     setContacts(contacts.filter((contact) => contact.no != no))
   }
+
   return (
-    <div>
+    <div className='text-center mt-5'>
       <h2>클라이언트 테이블 받아오기 연습</h2>
       <button onClick={getClick}>클라이언트 데이타</button>
       <hr />
@@ -63,7 +69,7 @@ const AxiosClient = () => {
                   <img src={contact.photo} />
                 </td>
                 <td>
-                  <input type='button' name={contact.no} value='삭제' />
+                  <input type='button' name={contact.no} onClick={removeClick} value='삭제' />
                 </td>
               </tr>
             ))}
