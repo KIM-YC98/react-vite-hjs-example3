@@ -14,6 +14,8 @@ import UseEffectPage from '../pages/UseEffectPage'
 import UseRef1Page from '../pages/UseRef1Page'
 import UseRef2Page from '../pages/UseRef2Page'
 import GradeinputPage from '../pages/GradeinputPage'
+import ContextNotUsepage from '../pages/ContextNotUsepage'
+import ContextUsedPage from '../pages/ContextUsedpage'
 //React Routes, Route 사용시 배열로 관리하기
 const routes = [
   {
@@ -96,7 +98,16 @@ const routes = [
     element: <GradeinputPage />,
     title: '성적-input',
   },
-
+  {
+    path: '/contextnotuse',
+    element: <ContextNotUsepage />,
+    title: '컨텍스트api-사용안함',
+  },
+  {
+    path: '/contextuse',
+    element: <ContextUsedPage />,
+    title: '컨텍스트api-사용',
+  },
 ]
 
 export default routes
